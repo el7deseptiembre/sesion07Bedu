@@ -19,3 +19,7 @@ head(DataDB)
 
 ggplot(data=DataDB, aes(x=IsOfficial, y=Percentage, fill=CountryCode)) + 
   geom_bar(stat="identity", position="dodge")
+
+ggplot(data=DataDB, aes(x = Percentage, y = CountryCode, fill = IsOfficial))+ 
+  geom_bar(stat="identity", position="dodge")
+       
